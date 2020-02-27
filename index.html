@@ -1,125 +1,204 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>HM</title>
-    <style>
-body{
-  background-color: black;
-}  
-b {
-  background-color: orange;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  border-radius: 20px;
-  font-size: 64pt;
-  text-align: center;
-}
-a {
-  background-color: rgb(0, 0, 0);
-  border-radius: 20px;
-  color: white;
-  font-size: 64pt;
-}
-p{
-  color: orange;
-  font-size: 16pt;
+<head>
+<meta charset="utf-8">
+<title>GrandTheftAuto</title>
+<style>
+  body{
+    margin: 0;
+    background-image: url('largeC.jpg');
+  }
+  .top{
+    background-color: black;
+    border:3px solid black;
+  }
+  #header{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('newbac.png');
+    padding: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
   
-}
-h1{
-  color: white;
-  font-size: 20pt;
-}
-header{
-  text-align: center;
-  
-}
-section{
-  color:white;
-  text-align: center;
-}
-div{
-color: orange;
-text-align: center;
-font-size: large;
-}
-/* 
-a:hover {
-  background-color: orange;
-   border-radius: 1em; 
-}  */
-  </style> 
+  }
+  .intr{
+    flex-wrap: nowrap;
+  }
+  .pic1{
+    display: flex;
+    justify-content: end;
+  }
+
+  .he{
+    padding-top: 10px;
+    font-size: 40px;
+    align-self: flex-start;
+    width: 500px;
+    color: rgb(50, 50, 50);
+    font-family:"impact", Times, serif
     
-  </head>
-      
-  <body>
-    <header>
-    <a>Home</a>
-    <b>work</b></header>
-    <h1>What I've learnt</h1>
-    <p>HTML stands for Mypertext Markup Language. It is a markup language that is designed to be displayed in the web. Markup language is a set of markup tags. HTML uses tags to describe web pages.<br>
-      HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.<br><br><br>
+  }
 
-      Example<br><br>
-      &lt;!DOCTYPE html&gt;<br>
-      &lt;html&gt;<br>
-      &lt;head&gt;<br>
-&lt;meta charset="utf-8"&gt;<br>
-&lt;title&gt;(runoob.com)&lt;/title&gt;<br>
-&lt;/head&gt;<br>
 
-&lt;body&gt;<br>
 
-&lt;b&gt;This text is bold&lt;/b&gt;<br>
+  .np1{
+    padding-right: 20px;
+    border-right: 3px solid white;
+  }
+  .np2{
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 3px solid white;
+  }
+  .np3{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  #nav{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding: 3px;
+    text-align: end;
+    align-items: center;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+  }
+  .content{
+    border: 0px solid white;
+    margin: 50px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 
-&lt;br /&gt;<br>
+  }
+  .gam1{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    
+    
+  }
+  .gt1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+  }
+  .gt2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+  }
+  .gt3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+  }
+  .gt4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+  }
+  .gt5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+  }
+  .gam2{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    
+  }
+  .gam3{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+  .gam4{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+  .gam5{
+    border-top:20px solid  rgb(50, 50, 50);
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+  }
 
-&lt;strong&gt;This text is bold&lt;/strong&gt;<br>
+  
+</style>
+</head>
 
-&lt;br /&gt;<br>
 
-&lt;big&gt;This text font is enlarged&lt;/big&gt;<br>
 
-&lt;br /&gt;<br>
+<body>
+<div class="top">
 
-&lt;em&gt;This text is italicized&lt;/em&gt;<br>
+</div>
+<div id="header">
+  <div class="he">  <p1>Know the History of Your<br>
+       Grand Theft Auto</p1></div>
+  <p1 class="pic1"><img src="newa.png" alt="some_text" width="70%">
+  </p1>
 
-&lt;br /&gt;<br>
-  &lt;/p&gt;<br>
-  &lt;i&gt;This text is italicized&lt;/i&gt;<br>
+</div>
+<div id="nav">
+    <p1 class="np1">Support</p1>
+    <p1 class="np2">Contact</p1>
+    <p1 class="np3">Resource</p1>
+</div>   
+<div class="content">
+  <div class="gam1"><img src="gta1.jpg" alt="some_text" width= 440px >
+    <p1 class="gt1">Grand Theft Auto I</p1>
+  </div>
+  <div class="gam2">
+    <img src="gta2n.jpg" alt="some_text" width= 440px height="550">
+    <p1 class="gt2">Grand Theft Auto II</p1>
 
-&lt;br /&gt;<br>
+  </div>
+  <div class="gam3">
+    <img src="gta3.jpg" alt="some_text" width= 440px height="550">
+    <p1 class="gt3">Grand Theft Auto III</p1>
+  </div>
+  <div class="gam4">
+    <img src="gta4npng.png" alt="some_text" width= 440px height="550">
+    <p1 class="gt4">Grand Theft Auto IV</p1>
+  </div>
+  <div class="gam5">
+    <img src="gta5.png" alt="some_text" width= 440px height="550">
+    <p1 class="gt5">Grand Theft Auto V</p1>
+  </div>
+</div>
 
-&lt;small&gt;This text is scaled down&lt;/small&gt;<br>
 
-&lt;br /&gt;<br>
 
-This text contains
-&lt;sub&gt;The subscript&lt;/sub&gt;<br>
-
-&lt;br /&gt;<br>
-
-This text contains
-&lt;sup&gt;superscript&lt;/sup&gt;<br>
-
-&lt;/body&gt;<br>
-&lt;/html&gt;<br></p1>
-
-    <section>
-      
-      
-      <div> Here is the sources that i used</div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bWPMSSsVdPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
-      <div>
-        
-        source one </div> 
-      <section>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J35jug1uHzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
-        <div>
-          
-          source two </div> 
-        
-  </body>
-
-</html>  
+       
+</body>
+</html>
